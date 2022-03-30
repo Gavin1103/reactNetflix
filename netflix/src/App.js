@@ -2,13 +2,13 @@ import './App.scss';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Row from './components/Row';
-import Sidebar from './components/Sidebar'
+// import Sidebar from './components/Sidebar'
 
 function App() {
   return (
     <div id="App">
       <Nav />
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Header />
       <Row />
       <Row />
