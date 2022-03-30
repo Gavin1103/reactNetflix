@@ -28,6 +28,36 @@ function Sidebar() {
                     <li>Filmhuisfilms</li>
                     <li>Thrillerfilms</li>
                     <li>Horrorfilms</li>
+                    <li>Anime</li>
+                    <li>Drama's</li>
+                    <li>Filmhuisfilms</li>
+                    <li>Thrillerfilms</li>
+                    <li>Horrorfilms</li>
+                    <li>Homepagina</li>
+                    <li>Anime</li>
+                    <li>Drama's</li>
+                    <li>Filmhuisfilms</li>
+                    <li>Thrillerfilms</li>
+                    <li>Horrorfilms</li>
+                    <li>Drama's</li>
+                    <li>Filmhuisfilms</li>
+                    <li>Thrillerfilms</li>
+                    <li>Horrorfilms</li>
+                    <li>Anime</li>
+                    <li>Drama's</li>
+                    <li>Filmhuisfilms</li>
+                    <li>Thrillerfilms</li>
+                    <li>Horrorfilms</li>
+                    <li>Homepagina</li>
+                    <li>Anime</li>
+                    <li>Drama's</li>
+                    <li>Filmhuisfilms</li>
+                    <li>Thrillerfilms</li>
+                    <li>Horrorfilms</li>
+                    <li>Drama's</li>
+                    <li>Filmhuisfilms</li>
+                    <li>Thrillerfilms</li>
+                    <li>Horrorfilms</li>
                 </ul>
             </div>
         </aside>
