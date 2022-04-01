@@ -1,4 +1,4 @@
-.testDiv{
+.testDiv {
     color: red;
 }
 
@@ -13,100 +13,143 @@
 nav {
     width: 100%;
     height: 75px;
-    background-color: black;
+    // background-color: black;
     display: flex;
     position: fixed;
-}
-.logo {
-    height: 100%;
+    transition: 0.5s;
+
+    #nav-leftContainer {
+        width: 50%;
+        display: flex;
+    }
+
+    #nav-rightContainer {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        // background-color: red;
+    }
+
+    .logo {
+        height: 100%;
+    }
+
+    .nav-icons {
+        width: 75px;
+        height: 100%;
+        background-color: green;
+        // align-self: flex-end;
+        margin-right: 25px;
+
+    }
+
+
+    #hamburgermenu {
+        height: 100%;
+        width: 75px;
+        background-image: url(images/burgermenu.png);
+        background-position: center;
+        background-size: cover;
+        border: none;
+    }
 }
 
-#hamburgermenu {
-    height: 100%;
-    width: 75px;
-    background-image: url(images/burgermenu.png);
-    background-position: center;
-    background-size: cover;
-    border: none;
-}
 // alles voor de Siderbar component
 
-aside{
+aside {
 
     // background-color: purple;
     position: fixed;
-    // top: 0px;
     height: auto;
     width: 100%;
     display: flex;
+
     // overflow-y: scroll;
-    #sidebarInnerContainerLeft{
-        width: 20%;
+    #sidebarInnerContainerLeft {
+        width: 30%;
+        min-width: 325px;
+        max-width: 325px;
+
+        // z-index: 1;
+        // position: absolute;
         // display: none;
         #profielContainer {
             width: 100%;
-            background-color: blue;
+            background-color: rgb(114, 111, 111);
             height: 100px;
-    
+            color: white;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-    
+
             #profielFoto {
                 height: 75px;
                 width: 75px;
                 background-color: aqua;
             }
+
             #profielSwitch {
                 height: 50px;
                 width: 50px;
                 background-color: aqua;
             }
         }
-    
+
         #sidebarContent {
             overflow-y: scroll;
             height: 100vh;
-    
+
             .info {
                 width: 100%;
                 height: 60px;
                 background-color: green;
-                border: solid;
+                border-top: solid;
+                // border-bottom: solid;
             }
-    
+
             ul {
                 width: 100%;
                 height: auto;
             }
+
+            li:first-of-type { 
+                border-top: solid black;
+                border-left: solid 5px red;
+            }
+
             li {
+                color: white;
                 width: 100%;
-                background-color: pink;
+                background-color: darkgrey;
                 height: 60px;
-                border: solid;
-    
                 display: flex;
                 align-items: center;
                 padding-left: 10%;
+                border-left: solid 5px black;
             }
         }
     }
 
-    #sidebarInnerContainerRight{
-        width: 80%;
+    #sidebarInnerContainerRight {
+        width: 100%;
         height: 100vh;
-        background-color: yellow;
-        opacity: 0;
+        // background-color: green;
+        // opacity: 0;
     }
 
-    
+
 }
 
 // alles voor de header component
 header {
     background-color: yellow;
-    height: 600px;
+    height: 80vh;
     width: 100%;
+    background-image: url(images/header.webp);
+    background-size: cover;
+    background-position: center;
+
+
 }
 
 .row {

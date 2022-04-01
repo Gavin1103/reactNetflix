@@ -71,10 +71,33 @@ function Nav() {
             <div onClick={() => setShowMenu(false)} id="sidebarInnerContainerRight">hgfhdsjksalh</div>
         </aside>
     }
+
+
+    function changeNavBg() {
+        var scrollValue = window.scrollY;
+        var navBar = document.getElementById("nav");
+        console.log(scrollValue);
+        if (scrollValue > 0) {
+            navBar.style = 'background-color:black;'
+        } else {
+            navBar.style = 'background-color:none'
+        }
+    }
+    window.addEventListener('scroll', changeNavBg)
+
+
+
     return (
-        <nav>
-            <button onClick={() => setShowMenu(!showMenu)} id='hamburgermenu'></button>
-            <img className='logo' src={logo} alt="Logo" />
+        <nav id='nav'>
+
+            <div id="nav-leftContainer">
+                <button onClick={() => setShowMenu(!showMenu)} id='hamburgermenu'></button>
+                <img className='logo' src={logo} alt="Logo" />
+            </div>
+            <div id="nav-rightContainer">
+                <div className='nav-icons' id="nav-searchIcon"></div>
+                <div className='nav-icons' id="nav-settingsIcon"></div>
+            </div>
             {sidebar}
         </nav>
 
