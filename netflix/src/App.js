@@ -2,21 +2,38 @@ import './App.scss';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Row from './components/Row';
+import Login from './components/Login'
+
 // import Sidebar from './components/Sidebar'
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div id="App">
-      <Nav />
-      {/* <Sidebar /> */}
-      <Header />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-    </div>
+    <Router>
+      <div id="App">
+
+      <Switch>
+          <Route exact path="/">
+            <Login />
+          </Route>
+        </Switch>
+
+        <Switch>
+          <Route  exact path="/homepage">
+            <Nav />
+            <Header />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+          </Route>
+        </Switch>
+
+      </div>
+    </Router >
   );
 }
 
