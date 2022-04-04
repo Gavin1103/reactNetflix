@@ -1,7 +1,6 @@
 .testDiv {
     color: red;
 }
-
 * {
     padding: 0;
     margin: 0;
@@ -21,6 +20,7 @@ nav {
     #nav-leftContainer {
         width: 50%;
         display: flex;
+        // align-items: center;
     }
 
     #nav-rightContainer {
@@ -31,33 +31,48 @@ nav {
     }
 
     .logo {
+        height: 75px;
+    }
+    #logoContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
     }
 
     .nav-icons {
         width: 75px;
         height: 100%;
-        background-color: green;
+        // background-color: green;
         // align-self: flex-end;
         margin-right: 25px;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    #searchIconImg{
+        height: 30px;
+    }
+    #dotsImg{
+        height: 10px;
+    }
 
     #hamburgermenu {
         height: 100%;
         width: 75px;
-        background-image: url(images/burgermenu.png);
-        background-position: center;
-        background-size: cover;
-        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menuLogo {
+        height: 30px;
     }
 }
 
 // alles voor de Siderbar component
 
 aside {
-
     // background-color: purple;
     position: fixed;
     height: auto;
@@ -112,7 +127,7 @@ aside {
                 height: auto;
             }
 
-            li:first-of-type { 
+            li:first-of-type {
                 border-top: solid black;
                 border-left: solid 5px red;
             }
@@ -136,8 +151,6 @@ aside {
         // background-color: green;
         // opacity: 0;
     }
-
-
 }
 
 // alles voor de header component
@@ -148,13 +161,33 @@ header {
     background-image: url(images/header.webp);
     background-size: cover;
     background-position: center;
+}
 
+.rowContainer {
+    height: 300px;
+    min-width: 100%;
+    background-color: aqua;
+    border: solid;
+    display: flex;
+    overflow-x: scroll;
+}
 
+.rowContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.rowInnerContainer {
+    display: flex;
 }
 
 .row {
-    height: 300px;
-    width: 100%;
-    background-color: aqua;
+    width: 200px;
+    height: 100%;
+    background-color: grey;
     border: solid;
+    background-image: url(images/batman.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background: no-repeat
 }

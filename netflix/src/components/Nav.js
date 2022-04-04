@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 
-const logo = require('../images/logo.jpg');
+const logo = require('../images/netflixlogo.png');
+const hamburgermenu = require('../images/netflixmenu.png');
+const searchIconImg = require("../images/searchicon.png");
+const dotsImg = require('../images/three_dots.png')
 
 function Nav() {
 
@@ -76,7 +79,7 @@ function Nav() {
     function changeNavBg() {
         var scrollValue = window.scrollY;
         var navBar = document.getElementById("nav");
-        console.log(scrollValue);
+        // console.log(scrollValue);
         if (scrollValue > 0) {
             navBar.style = 'background-color:black;'
         } else {
@@ -91,12 +94,12 @@ function Nav() {
         <nav id='nav'>
 
             <div id="nav-leftContainer">
-                <button onClick={() => setShowMenu(!showMenu)} id='hamburgermenu'></button>
-                <img className='logo' src={logo} alt="Logo" />
+                <div onClick={() => setShowMenu(!showMenu)} id='hamburgermenu'><img id='menuLogo' src={hamburgermenu} alt="" /></div>
+                <div id="logoContainer"><img className='logo' src={logo} alt="Logo" /></div>
             </div>
             <div id="nav-rightContainer">
-                <div className='nav-icons' id="nav-searchIcon"></div>
-                <div className='nav-icons' id="nav-settingsIcon"></div>
+                <div className='nav-icons' id="nav-searchIcon"><img id='searchIconImg' src={searchIconImg} alt="" /></div>
+                <div className='nav-icons' id="nav-settingsIcon"><img id='dotsImg' src={dotsImg} alt="" /></div>
             </div>
             {sidebar}
         </nav>
