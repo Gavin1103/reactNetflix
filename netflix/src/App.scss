@@ -1,6 +1,7 @@
 .testDiv {
     color: red;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -33,6 +34,7 @@ nav {
     .logo {
         height: 75px;
     }
+
     #logoContainer {
         display: flex;
         justify-content: center;
@@ -50,9 +52,11 @@ nav {
         justify-content: center;
         align-items: center;
     }
+
     #searchIconImg {
         height: 30px;
     }
+
     #dotsImg {
         height: 10px;
     }
@@ -68,6 +72,37 @@ nav {
     #menuLogo {
         height: 30px;
     }
+}
+
+// alles voor de drie punten functie
+
+#settingsContainer {
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    width: 200px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(49, 48, 48);
+}
+
+.options {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+.options_A{
+    text-decoration: none;
+    color: white;
+}
+
+.options:hover {
+    background-color: rgb(70, 68, 68);
 }
 
 // alles voor de Siderbar component
@@ -90,17 +125,22 @@ aside {
         // display: none;
         #profielContainer {
             width: 100%;
-            background-color: rgb(114, 111, 111);
+            background-color: rgb(49, 48, 48);
             height: 100px;
             color: white;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            border-left: solid 5px black;
 
             #profielFoto {
                 height: 75px;
                 width: 75px;
                 background-color: aqua;
+                background-image: url(images/accountImg.jpg);
+                background-position: center;
+                background-size: cover;
+
             }
 
             #profielSwitch {
@@ -114,12 +154,34 @@ aside {
             overflow-y: scroll;
             height: 100vh;
 
+
             .info {
                 width: 100%;
                 height: 60px;
-                background-color: green;
+                background-color: rgb(49, 48, 48);
                 border-top: solid;
+                border-left: solid 5px black;
                 // border-bottom: solid;
+
+                .asideInfoContainer {
+                    width: 100%;
+                    height: 100%;
+                    // background-color: red;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+
+                    .infoIcon {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50px;
+                        background-color: white;
+                        margin-left: 2%;
+                        margin-right: 2%;
+                    }
+                }
+
+
             }
 
             ul {
@@ -135,7 +197,7 @@ aside {
             li {
                 color: white;
                 width: 100%;
-                background-color: darkgrey;
+                background-color: rgb(49, 48, 48);
                 height: 60px;
                 display: flex;
                 align-items: center;
@@ -148,19 +210,37 @@ aside {
     #sidebarInnerContainerRight {
         width: 100%;
         height: 100vh;
-        // background-color: green;
-        // opacity: 0;
+        background-color: black;
+        opacity: 0.6;
     }
 }
 
 // alles voor de header component
 header {
     background-color: yellow;
-    height: 80vh;
+    // min-height: 600px;
+    height: 1000px;
+    // max-height: 1200px;
     width: 100%;
     background-image: url(images/header.webp);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+// #headerInfoContainer{
+//     width: 50%;
+//     height: 80%;
+//     background-color: red;
+// }
+
+.genreTitle {
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border-left: solid 4px #000;
 }
 
 .rowContainer {
@@ -174,6 +254,7 @@ header {
 
 .rowContainer::-webkit-scrollbar {
     display: none;
+
 }
 
 .rowInnerContainer {
@@ -184,7 +265,7 @@ header {
     width: 200px;
     height: 100%;
     background-color: grey;
-    border: solid;
+    border: solid 4px;
     background-image: url(images/batman.jpg);
     background-position: center;
     background-size: cover;
@@ -215,7 +296,7 @@ footer {
     background-color: yellow;
 }
 
-#loginFormContainer{
+#loginFormContainer {
     width: 450px;
     background-color: black;
     height: 600px;
@@ -223,13 +304,14 @@ footer {
     opacity: 0.8;
     display: flex;
     justify-content: center;
-    
-}
-h2{
-    color:white
+
 }
 
-input{
+h2 {
+    color: white
+}
+
+input {
     height: 50px;
     width: 250px;
     border-radius: 10px;
@@ -237,7 +319,7 @@ input{
     margin: 10px 0px 10px 0px
 }
 
-form{
+form {
     // width: auto;
     // height: auto;
     display: flex;

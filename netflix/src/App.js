@@ -1,4 +1,5 @@
 import './App.scss';
+import './Mediaqry.scss';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Row from './components/Row';

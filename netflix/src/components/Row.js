@@ -14,34 +14,37 @@
 function Row() {
 
     return (
-        <div className="rowContainer">
-            <div className="rowInnerContainer">
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row"></div>
+        <div id="row">
+            <div className="genreTitle"><p>Genre</p></div>
+            <div className="rowContainer">
+                <div className="rowInnerContainer">
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                </div>
             </div>
         </div>
     );

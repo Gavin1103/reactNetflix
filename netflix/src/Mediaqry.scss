@@ -1,0 +1,49 @@
+// media querry's
+
+@media only screen and (max-width: 2000px) {
+
+    header {
+        height: 900px;
+    }
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+    header {
+        height: 800px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    header {
+        height: 700px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {}
+
+@media only screen and (max-width: 1000px) {
+
+    header {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {}
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {}
+
+@media only screen and (max-width: 600px) {}
