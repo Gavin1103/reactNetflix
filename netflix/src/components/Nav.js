@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 
 const logo = require('../images/netflixlogo.png');
 const hamburgermenu = require('../images/netflixmenu.png');
@@ -15,17 +15,15 @@ function Nav() {
     let sidebar;
     let settings;
 
-
-
-
+// voor de settings knop
     if (showSettings) {
         settings = <div id="settingsContainer">
-            <div className="options"><a className='options_A' href='#'>Instellingen</a></div>
+            <div className="options"><a className='options_A' href='/homepage'>Instellingen</a></div>
             <div className="options"><a className='options_A' href='/'>Uitloggen</a></div>
         </div>
     }
 
-
+// voor de sidebar
     if (showMenu) {
         sidebar = <aside id="SiderBar">
             <div id="sidebarInnerContainerLeft">
@@ -102,6 +100,7 @@ function Nav() {
     }
 
 
+    // nav een achtergrond kleur geven wanneer je scrollt
     function changeNavBg() {
         var scrollValue = window.scrollY;
         var navBar = document.getElementById("nav");
@@ -112,13 +111,12 @@ function Nav() {
             navBar.style = 'background-color:none'
         }
     }
-    window.addEventListener('scroll', changeNavBg)
+    window.addEventListener('scroll', changeNavBg);
 
 
 
     return (
         <nav id='nav'>
-
             <div id="nav-leftContainer">
                 <div onClick={() => setShowMenu(!showMenu)} id='hamburgermenu'><img id='menuLogo' src={hamburgermenu} alt="" /></div>
                 <div id="logoContainer"><img className='logo' src={logo} alt="Logo" /></div>

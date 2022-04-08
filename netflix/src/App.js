@@ -3,9 +3,9 @@ import './Mediaqry.scss';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Row from './components/Row';
-import Login from './components/Login'
-
-// import Sidebar from './components/Sidebar'
+import Login from './components/Login';
+import VerderKijkenRow from './components/VerderKijken';
+import Sidebar from './components/Sidebar'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -14,24 +14,28 @@ function App() {
     <Router>
       <div id="App">
 
-      <Switch>
+        <Switch>
           <Route exact path="/">
             <Login />
           </Route>
         </Switch>
 
         <Switch>
-          <Route  exact path="/homepage">
+          <Route exact path="/homepage">
             <Nav />
             <Header />
             <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
+          </Route>
+        </Switch>
+
+        <Switch>
+          <Route exact path='/anime'>
             <Row />
           </Route>
         </Switch>
+
+
+
 
       </div>
     </Router >
