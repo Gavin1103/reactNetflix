@@ -161,9 +161,10 @@ aside {
                 // border-top: solid;
                 border-left: solid 5px black;
                 border-bottom: solid;
+                display: flex;
 
                 .asideInfoContainer {
-                    width: 100%;
+                    width: 50%;
                     height: 100%;
                     // background-color: red;
                     display: flex;
@@ -179,6 +180,12 @@ aside {
                         margin-right: 2%;
                     }
                 }
+            }
+
+            .asideInfoIcon{
+                width: 50%;
+                height: 100%;
+                background-color: red;
             }
 
             ul {

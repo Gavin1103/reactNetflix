@@ -11,9 +11,16 @@ function Nav() {
 
     const [showMenu, setShowMenu] = useState(false);
     const [showSettings, setShowSettings] = useState(false);
+    const [showMeldingen, setShowMeldingen] = useState(false)
 
     let sidebar;
     let settings;
+// voor de meldingen 
+
+if(showMeldingen){
+    alert("hallo");
+    
+}
 
 // voor de settings knop
     if (showSettings) {
@@ -38,6 +45,18 @@ function Nav() {
                             <div className="infoIcon"></div>
                             <p>Meldingen</p>
                         </div>
+
+
+
+                        <div onClick={() => setShowMeldingen(!showMeldingen)} className="asideInfoIcon">
+
+
+                        
+                        </div>
+
+
+
+
                     </div>
                     <div id="downloads" className="info">
                         <div className="asideInfoContainer">
