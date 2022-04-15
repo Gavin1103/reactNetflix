@@ -96,6 +96,7 @@ nav {
     align-items: center;
     padding-left: 2%;
 }
+
 .options_A {
     text-decoration: none;
     color: white;
@@ -182,7 +183,7 @@ aside {
                 }
             }
 
-            .asideInfoIcon{
+            .asideInfoIcon {
                 width: 50%;
                 height: 100%;
                 background-color: red;
@@ -231,13 +232,56 @@ header {
     background-position: center;
     display: flex;
     align-items: center;
+
+    #headerInfoContainer {
+        width: auto;
+        height: auto;
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+    
+        #headerTitleLogo {
+            color: white;
+            font-size: 75px;
+        }
+        
+        #headerTitle {
+            color: white;
+            font-size: 75px;
+        }
+        
+        #headerText{
+            color: white;
+            width: 600px;
+        }
+        
+        #headerKijk{
+            color: white;
+            font-weight: bolder;
+            margin-top: 10px;
+            
+        }
+        .headerBtns{
+            width: 150px;
+            height: 50px;
+            margin-right: 10px;
+            // background-color: #000;
+            border: none;
+            // opacity: 0.8;
+            // color: white;
+        }
+        
+        
+    }
 }
 
-// #headerInfoContainer{
-//     width: 50%;
-//     height: 80%;
-//     background-color: red;
-// }
+
+
+
+
+
 
 .genreTitle {
     height: auto;
@@ -356,7 +400,7 @@ header {
         height: 100%;
         background-color: black;
         opacity: 0.5;
-        
+
     }
 
     #movieInfoInnerContainerMiddle {
@@ -365,8 +409,8 @@ header {
         background-color: rgb(49, 48, 48);
         max-width: 1000px;
         min-width: 500px;
-    
-        
+
+
     }
 
 }
@@ -384,7 +428,8 @@ header {
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+
 }
 
 footer {
@@ -394,33 +439,70 @@ footer {
 }
 
 #loginFormContainer {
-    width: 450px;
+    width: 475px;
     background-color: black;
     height: 600px;
     border-radius: 10px;
-    opacity: 0.8;
+    // opacity: 0.8;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+#loginBtn {
+    width: 300px;
+    background-color: red;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-top: 25px;
 }
 
 h2 {
     color: white;
 }
 
-input {
+.loginVeld {
     height: 50px;
-    width: 250px;
-    border-radius: 10px;
+    width: 300px;
+    border-radius: 5px;
     border: none;
     margin: 10px 0px 10px 0px;
 }
 
 form {
-    // width: auto;
+    width: 300px;
     // height: auto;
     display: flex;
     // background-color: red;
     flex-direction: column;
     // align-items: center;
     padding-top: 50px;
+}
+
+#helpContainer {
+    width: 100%;
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+    margin-top: 10px;
+    color: white;
+
+    #RememberMe {
+        margin-right: 5px;
+    }
+
+    .hulpBtn {
+        margin-left: auto;
+        color: white;
+        text-decoration: none;
+    }
 }

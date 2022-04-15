@@ -22,15 +22,73 @@
         height: 700px;
     }
 
+    
+
 }
 
-@media only screen and (max-width: 1100px) {}
+@media only screen and (max-width: 1100px) {
+    
+}
 
 @media only screen and (max-width: 1000px) {
 
     header {
+        background-color: yellow;
+        // min-height: 600px;
         height: 500px;
+        // max-height: 1200px;
+        width: 100%;
+        background-image: url(images/header.webp);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    
+        #headerInfoContainer {
+            width: auto;
+            height: auto;
+            // background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 50px;
+        
+            #headerTitleLogo {
+                color: white;
+                font-size: 30px;
+            }
+            
+            #headerTitle {
+                color: white;
+                font-size: 30px;
+            }
+            
+            #headerText{
+                color: white;
+                width: 400px;
+            }
+            
+            #headerKijk{
+                color: white;
+                
+            }
+            .headerBtns{
+                width: 125px;
+                height: 25px;
+                margin-right: 10px;
+                // background-color: #000;
+                border: none;
+                // opacity: 0.8;
+                // color: white;
+            }
+            
+            
+        }
     }
+    
+        
+        
+    
 
 }
 
@@ -39,7 +97,7 @@
 @media only screen and (max-width: 800px) {
 
     header {
-        height: 300px;
+        height: 500px;
     }
 
 }
