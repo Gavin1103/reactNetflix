@@ -216,7 +216,11 @@ aside {
         width: 100%;
         height: 100vh;
         background-color: black;
+<<<<<<< Updated upstream
         opacity: 0.6;
+=======
+        opacity: 0.5;
+>>>>>>> Stashed changes
     }
 }
 
@@ -241,29 +245,28 @@ header {
         flex-direction: column;
         justify-content: center;
         margin-left: 50px;
-    
+
         #headerTitleLogo {
             color: white;
             font-size: 75px;
         }
-        
+
         #headerTitle {
             color: white;
             font-size: 75px;
         }
-        
-        #headerText{
+
+        #headerText {
             color: white;
             width: 600px;
         }
-        
-        #headerKijk{
+
+        #headerKijk {
             color: white;
             font-weight: bolder;
             margin-top: 10px;
-            
         }
-        .headerBtns{
+        .headerBtns {
             width: 150px;
             height: 50px;
             margin-right: 10px;
@@ -272,16 +275,8 @@ header {
             // opacity: 0.8;
             // color: white;
         }
-        
-        
     }
 }
-
-
-
-
-
-
 
 .genreTitle {
     height: auto;
@@ -400,7 +395,6 @@ header {
         height: 100%;
         background-color: black;
         opacity: 0.5;
-
     }
 
     #movieInfoInnerContainerMiddle {
@@ -409,10 +403,45 @@ header {
         background-color: rgb(49, 48, 48);
         max-width: 1000px;
         min-width: 500px;
-
-
     }
 
+    .videoBackground {
+        height: 400px;
+        width: 100%;
+        background-image: url(./images/gta.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .playVideo {
+            height: 50px;
+            width: 50px;
+            // background-color: red;
+            background-image: url(./images/playicon.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .videoInfoContainer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        color: white;
+
+        .videoInfo {
+            margin-right: 10px;
+            font-weight: bolder;
+        }
+    }
+
+    .videoTekst {
+        color: white;
+    }
 }
 
 // alles voor de inlogpagina
@@ -429,7 +458,6 @@ header {
     display: flex;
     justify-content: center;
     // align-items: center;
-
 }
 
 footer {
@@ -487,6 +515,15 @@ form {
     padding-top: 50px;
 }
 
+// film afspelen
+
+#playFilm {
+    width: 100%;
+    height: 100vh;
+    // background-color: red;
+    // margin-left: auto;
+    // margin-right: auto;
+}
 #helpContainer {
     width: 100%;
     // background-color: green;

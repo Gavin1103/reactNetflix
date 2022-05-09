@@ -65,7 +65,7 @@ if(showMeldingen){
                         </div>
                     </div>
                     <ul>
-                        <li>Homepagina</li>
+                        <li onClick={() => alert('resr')}>Homepagina</li>
                         <li>Anime</li>
                         <li>Drama's</li>
                         <li>Filmhuisfilms</li>
@@ -117,7 +117,15 @@ if(showMeldingen){
             <div onClick={() => setShowMenu(false)} id="sidebarInnerContainerRight">hgfhdsjksalh</div>
         </aside>
     }
-
+    // const setMenu = async (event) => {
+    //     setShowMenu(true);
+    //     event.stopPropagation();
+    // }
+    // window.onclick = function () {
+    //     if (setShowMenu) {
+    //         setShowMenu(false)
+    //     }
+    // }
 
     // nav een achtergrond kleur geven wanneer je scrollt
     function changeNavBg() {
