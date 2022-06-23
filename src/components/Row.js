@@ -19,7 +19,7 @@ function Row() {
             <div id="movieInfoInnerContainerMiddle">
 
                 <div className="videoBackground">
-                    <a href="/video"><div className="playVideo"></div></a>
+                    <a href="http://u533187.gluweb.nl/videos/video.html"><div className="playVideo"></div></a>
                 </div>
 
                 <h2>Grand Theft Auto</h2>
@@ -30,16 +30,7 @@ function Row() {
                     <div className="videoInfo">HD</div>
                     <div className="videoInfo">5.1</div>
                 </div>
-                {/* <video id="playFilm" controls>
-                    <source src={video} type="video/mp4" />
-                </video> */}
                 <div className="videoTekst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eveniet corporis omnis esse. Totam tempore velit voluptas numquam expedita veniam.</div>
-
-
-
-                {/* 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kBsNvGyfM8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-
             </div>
             <div onClick={() => ShowMovieInfo(false)} className="movieInfo_OuterContainer"></div>
         </div>
